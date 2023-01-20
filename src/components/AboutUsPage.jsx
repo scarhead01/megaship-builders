@@ -24,27 +24,33 @@ const AboutUsPage = () => {
 const Con = styled.div`
 & .aboutUs{
     display: flex;
-    width: 100%;
+    width: 100vw;
+    height: 70vh;
+    align-items: center;
     .officeImg{
         margin:15px;
         position: relative;
         width: 100%;
         .office{
-            height: 100%;
-            width: 100%;
+            height: 500px;
+            width: 700px;
             margin: auto;
             display: flex;
+            
         }
     }
     .description{
         display: flex;
+        align-items: center;
         .box{
-            margin: auto 2rem;
-            justify-content: center;
-            width: 100%;
+            
+            display: flex;
+            width: 75%;
+            height: 50%;
             border-radius: 10px;
             background: rgba(162, 200, 236, 0.85);
             h3{
+                margin:auto;
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 500;

@@ -10,9 +10,16 @@
   },
   "dependencies": {
     "@font/nunito": "^1.0.3",
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-regular-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.6.2",
+    "react-section": "^1.1.11",
     "styled-components": "^5.3.6",
+    "swiper": "^8.4.5",
     "typeface-nunito": "^1.1.13"
   },
   "devDependencies": {

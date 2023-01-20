@@ -45,6 +45,7 @@ const service = [
     },
 ]
 const ServicePage = () => {
+    
   return (
     <Con>
         <div className="cardCon">
@@ -53,13 +54,15 @@ const ServicePage = () => {
                    <div className="wrapper">
                     <div className="shadow">
                         {item.image}
-                    </div>
-                    <div className="textWrapper">
-                      <div className="label">
+                        <div className="label">
                       <h3 className='head'>{item.serviceHeader}</h3>
                       </div>
-                        <h3>{item.textDesc}</h3>
                     </div>
+                   
+                    {/* <div className="textWrapper">
+                      
+                        <h3>{item.textDesc}</h3>
+                    </div> */}
                    </div> 
                 )
             })}
@@ -71,58 +74,56 @@ const Con = styled.div`
 width: 100%;
     & .cardCon{
         width: 100%;
+        height: 100%;
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
         & .wrapper{
-        width:230px;
-        background: #FFFFFF;
-        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        height: 380px;
-        margin: auto;
-        margin-top: 10px;
-       // padding: 50px;
+            width: 350px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 0px 2px 1px #f6dcdc ;
+    margin: .5rem 10px;
+    padding: 10px;
+    padding-top: 10px;
         & .shadow{
-        display: flex;
-        align-items: center;
-        justify-content: center;  
-        width: 100%;  
+      border-radius: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
            & .serviceImg{
-                position: relative;
-                margin:  auto;
-                width: 100%;
+            display: flex;
+            margin: auto;
+            color: white;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            z-index: 5;
+            }
+            & .label{
+                position: absolute;
+                display: flex;
+                width: 95%;
+                align-items: center;
+                justify-content: center;
                 border-radius: 5px;
-                border-bottom-left-radius: 0px;
-                border-bottom-right-radius: 0px;
-            }
-            } 
-            & .textWrapper{
-           
-           display: flex;
-           flex-direction: column;
-           
-           & .label{
-            height: 25px;
-           }
-           & h3{
-                font-size: 10px;
-                color: #1b1b1b;
-                text-align: center;
-                line-height: 15px;
-                margin: 10px 15px;
-                white-space: wrap;
-                text-overflow: ellipsis;
-                font-weight: 400;
-                &.head{
-                    font-weight: 900;
+                background-color: rgba(60, 29, 181, 0.58);
+                height: 52.5px;
+                z-index: 20;
+                top: 212px;
+               
+                &:hover{
+                    display:none ;
                 }
-            }
-            padding-bottom: 10px;
+               
+            .head{
+            position: absolute;
+            
+            
+        }
           }  
+            } 
         }
     }
 `

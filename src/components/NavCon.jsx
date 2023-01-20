@@ -10,11 +10,13 @@ const NavCon = () => {
               alt="logo"
             />
     <nav>
-      <a href ="/#">Home</a>
-      <a href ="/#">About Us</a>
-      <a href ="/#">Services</a>
-      <a href ="/#">Contact Us</a>
-      <a href ="/#">Client</a>
+      <ul className="nav-links">
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Services</li>
+      <li>Contact Us</li>
+      <li>Client</li>
+    </ul>
     </nav>
    </div>
     </Con>
@@ -22,7 +24,6 @@ const NavCon = () => {
 }
 
 const Con =styled.div`
-width:100%;
 & .headers{
 width: 100%;
 display: inline-flex;
@@ -30,15 +31,20 @@ justify-content: space-between;
 & img{
   height: 100px;
   width:200px;
-  display: flex;
 }
 & nav{
   display:flex;
+  justify-content: space-around;
+  min-height: 10vh;
   align-items: center;
   margin-right: 100px;
-  & a{
-   padding:5px;
-   color: white;
+  width:30%;
+  .nav-links{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
   }
 }
 }
